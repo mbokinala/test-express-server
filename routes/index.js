@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.status(200).send("Hi there")
 });
 
+router.post('/', function(req, res, next) {
+  res.status(200).send('received data successfully');
+});
+
 module.exports = router;
