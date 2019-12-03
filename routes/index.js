@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
   res.status(200).send('received data successfully');
-  console.log(res.data)
+  console.log(req.body)
 });
 
 module.exports = router;
